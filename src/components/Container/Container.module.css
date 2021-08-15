@@ -5,8 +5,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 20px auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 
   color: var(--section-text);
   background-color: var(--container-background);
@@ -15,4 +14,5 @@
 .container ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
