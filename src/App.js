@@ -1,10 +1,11 @@
 // import './App.css';
 import user from './user.json';
+import Container from './components/Container/Container';
 import Profile from './components/Profile/Profile';
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -12,7 +13,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-    </div>
+    </Container>
   );
 }
 
