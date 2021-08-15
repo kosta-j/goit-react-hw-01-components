@@ -8,7 +8,7 @@ export default function Statistics(props) {
 
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.statList}>
         {statisticalData.map(el => (
