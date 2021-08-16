@@ -1,6 +1,6 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
-import StatisticsList from './StatisticsList';
+import StatisticsListItem from './StatisticsList';
 import statisticalData from '../../statistical-data.json';
 
 export default function Statistics(props) {
@@ -12,7 +12,7 @@ export default function Statistics(props) {
 
       <ul className={s.statList}>
         {statisticalData.map(el => (
-          <StatisticsList
+          <StatisticsListItem
             key={el.id}
             label={el.label}
             percentage={el.percentage}

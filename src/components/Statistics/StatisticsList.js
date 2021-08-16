@@ -1,7 +1,7 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-export default function StatisticsList(props) {
+export default function StatisticsListItem(props) {
   const { id, label, percentage } = props;
   return (
     <li className={s.item} key={id}>
@@ -11,7 +11,7 @@ export default function StatisticsList(props) {
   );
 }
 
-StatisticsList.propTypes = {
+StatisticsListItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   percentage: PropTypes.number,

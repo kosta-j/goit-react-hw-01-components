@@ -1,0 +1,38 @@
+.transactionHistory {
+  width: 500px;
+
+  border-collapse: collapse;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--section-background);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+thead {
+  background-color: #03bcd5;
+  color: var(--section-background);
+  text-transform: uppercase;
+}
+
+th:nth-child(2n) {
+  border-right: 2px solid var(--section-background);
+  border-left: 2px solid var(--section-background);
+}
+
+tr {
+  height: 50px;
+}
+
+td:nth-child(2n) {
+  border-right: 2px solid var(--container-background);
+  border-left: 2px solid var(--container-background);
+}
+
+.typecell::first-letter {
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(2n) td {
+  background-color: var(--section-sub-background);
+}

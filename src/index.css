@@ -1,8 +1,10 @@
+@import-normalize;
+
 :root {
   --container-background: #e7ecf2;
   --section-background: #fff;
   --section-sub-background: #f3f6f9;
-  --section-text: #707070;
+  --section-text: #8b8b8b;
   --section-bold-text: #273546;
 }
 

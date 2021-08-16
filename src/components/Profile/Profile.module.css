@@ -49,7 +49,7 @@
 .stats li {
   width: 33.33%;
   padding: 10px 0;
-  border: 1px solid var(--section-text);
+  border: 1px solid var(--container-background);
 }
 
 .label,
