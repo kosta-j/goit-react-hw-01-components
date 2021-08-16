@@ -1,22 +1,18 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
-import StatisticsListItem from './StatisticsList';
-import statisticalData from '../../statistical-data.json';
+import StatisticsListItem from './StatisticsListItem';
+// import statisticalData from '../../statistical-data.json';
 
 export default function Statistics(props) {
-  const { title } = props;
+  const { title, stats } = props;
 
   return (
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.statList}>
-        {statisticalData.map(el => (
-          <StatisticsListItem
-            key={el.id}
-            label={el.label}
-            percentage={el.percentage}
-          />
+        {stats.map(el => (
+          <StatisticsListItem key={el.id} stats={el} />
         ))}
       </ul>
     </section>
@@ -25,4 +21,5 @@ export default function Statistics(props) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.array,
 };

@@ -1,6 +1,7 @@
 // import './App.css';
 import user from './user.json';
 import friendList from '../src/friends.json';
+import statisticalData from './statistical-data.json';
 import transactions from './transactions.json';
 
 import Container from './components/Container/Container';
@@ -22,7 +23,7 @@ function App() {
         />
       </Container>
       <Container>
-        <Statistics title="Upload stats" />
+        <Statistics title="Upload stats" stats={statisticalData} />
       </Container>
       <Container>
         <FriendList friends={friendList} />
