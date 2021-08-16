@@ -1,11 +1,13 @@
-import s from './FriendList.css';
+import s from './FriendList.module.css';
 import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
 
-export default function FriendList(friends) {
+export default function FriendList({ friends }) {
   return (
     <ul className={s.friendList}>
-      <FriendListItem friend={friends[0]} />
+      {friends.map(el => (
+        <FriendListItem friend={el} />
+      ))}
     </ul>
   );
 }
