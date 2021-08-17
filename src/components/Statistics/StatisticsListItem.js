@@ -1,7 +1,7 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-export default function StatisticsListItem(stats) {
+export default function StatisticsListItem({ stats }) {
   const { label, percentage } = stats;
   return (
     <li className={s.item}>

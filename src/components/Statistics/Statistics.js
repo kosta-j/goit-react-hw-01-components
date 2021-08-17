@@ -1,7 +1,6 @@
 import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
 import StatisticsListItem from './StatisticsListItem';
-// import statisticalData from '../../statistical-data.json';
 
 export default function Statistics(props) {
   const { title, stats } = props;
